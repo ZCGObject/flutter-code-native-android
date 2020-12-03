@@ -1,0 +1,8 @@
+include ':flutter_zcg_one_module'
+include ':app'
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+        settingsDir,
+        'flutter_zcg_one_module\\.android\\include_flutter.groovy'
+))
+rootProject.name = "FlutterZcgFourDemo"
